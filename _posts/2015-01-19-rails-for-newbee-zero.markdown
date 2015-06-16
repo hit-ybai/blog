@@ -3,12 +3,12 @@ layout: post
 title: "[Rails]「从零单排」[第零篇] 所谓MVC"
 date: 2015-01-19 14:55:27
 comments: true
-categories: 
+categories: 程序开发
+tag:
+- MVC
+- rails
+- 从零单排
 ---
-在开始这篇文章之前，希望读者对于网络开发有一些了解，最好能够先完成以下课程的学习： 
-[哈佛大学公开课：计算机科学cs50](http://v.163.com/special/opencourse/cs50.html)(Web部分) 
-[哈佛大学公开课：构建动态网站](http://v.163.com/special/opencourse/buildingdynamicwebsites.html) 
-
 ##何为MVC
 
 为了明确一个`Web Application`中各个部分的职责，我们人为规定三个层级：Controller层，Model层和View层。这是一种设计上的解耦。

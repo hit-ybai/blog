@@ -1,10 +1,13 @@
 ---
 layout: post
-title: "[Fate/stay night] -UBW- 11"
+title: "Fate/stay night -UBW- 11"
 date: 2014-12-21 13:16:51 +0800
 comments: true
-categories: 
+categories: 生活随想
+tags:
+- Fate/stay night UBW
 ---
+红A的一段话：
 > 我战斗的意义，当然只是为了我自己
 > 如果你的欲望是不想让任何人受伤，那就随你的便吧
 > 但前提是，那是真正的来源于你自身的欲望
