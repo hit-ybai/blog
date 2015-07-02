@@ -33,23 +33,23 @@ comments: true
             - Nginx
         * 单点登录
         * 数据库
-            - 关系型
-                + MySQL
-                    * 读写分离
-                    * 分表
-                    * 主从架构
-                    * 读索引提速
-                        - 搜索引擎索引
-                            + 全量索引
-                            + bin log 增量索引
-            - 文档型
-                + MongoDB
-        * 搜索引擎
+            - MySQL
+                + 读写分离
+                + 分表
+                + 主从架构
+                + 读索引提速
+                    * 搜索引擎索引
+                        - 全量索引
+                        - bin log 增量索引
+            - MongoDB
             - Solr
             - Elastic Search
-        * 缓存
             - Redis
             - Memcache
+            - Hive
+            - Hbase
+            - Spark
+            - Leveldb
         * 单点故障
             - 双主架构
         * 防灾冗余
@@ -69,12 +69,6 @@ comments: true
         * 质量保障
             - 单元测试
             - 持续集成
-        * 推荐系统
-            - 机器学习
-            - 分布式大数据平台
-                + Hive
-                + Hbase
-                + Spark
         * 部署
             - Docker
         * 流程管理

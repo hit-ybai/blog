@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "千万不要sudo brew install"
+title: "sudo brew install"
 date: 2015-01-09 09:34:22 +0800
 comments: true
 categories: 开发工具
@@ -12,11 +12,11 @@ tags:
 
 今天终于发现了问题的原因：当初我在用`brew`安装`activemq`的时候就是用的是：
 ```bash
-$ sudo brew activemq
+$ sudo brew install activemq
 ```
 而正确的安装方式是：
 ```bash
-$ brew activemq
+$ brew install activemq
 ```
 解决方案：
 ```bash
