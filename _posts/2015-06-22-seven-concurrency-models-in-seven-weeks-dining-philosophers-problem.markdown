@@ -83,4 +83,86 @@ public class DiningPhilosophers {
 ```
 这个栗子属于可以锁得死死的那种。
 
+因为全局的多个代码块可能会共同使用一些锁，所以我们可以通过为所有的锁添加一个偏序关系，来避免死锁状态的产生。
+
+`Philosopher.java`
+```java
+class Philosopher extends Thread {
+    private int id;
+    private Chopstick first, secound;
+    private Random random;
+
+    public Philosopher(Chopstick left, Chopstick right, int id) {
+        this.id = id;
+        if (left.getId() < right.getId()) {
+            this.first = left; this.second = right;
+        } else {
+            this.first = right; this.second = left;
+        }
+        random = new Random();
+    }
+    public void run() {
+        try {
+            while (true) {
+                Thread.sleep(random.nextInt(1000));
+                synchronized(first) {
+                    System.out.println("Philosopher#" + id + " take Chopstick#" + first.getId());
+
+                    synchronized(second) {
+                        System.out.println( "Philosopher#" +
+                            id +" take Chopstick#" + second.getId() );
+                        Thread.sleep( random.nextInt(1000) );
+                    }
+                    System.out.println("Philosopher#" + id + " put Chopstick#" + second.getId());
+                }
+                System.out.println("Philosopher#" + id + " put Chopstick#" + first.getId());
+            }
+        } catch (InterruptedException e) {}
+    }
+}
+```
+
+#### 外星方法
+这里我们构造有一个类从一个URL进行下载, 用`ProgressListeners`监听下载速度
+```java
+class Downloader extends Thread {
+    private InputStream in;
+    private OutputStream out;
+    private ArrayList<ProgressListener> listeners;
+
+    public Downloader(URL url, String outputFilename) throws IOException {
+        in = url.openConnect().getInputSteam();
+        out = new FileOutputStream(outputFilename);
+        listeners = new ArrayList<ProgressListener>();
+    }
+
+    public synchronized void addListener(ProgressListener listener) {
+        listeners.add(listener);
+    }
+
+    public synchronized void removeListener(ProgressListener listener) {
+        listeners.remove(listener);
+    }
+
+    private synchronized void updateProgress(int n) {
+        for (ProgressListener listener: listeners)
+            listener.onProgress(n);
+    }
+
+    public void run() {
+        int n = 0, total = 0;
+        byte[] buffer = new byte[1024];
+
+        try {
+            while ( (n = in.read(buffer)) != -1 ) {
+                out.write(buffer, 0, n);
+                total += n;
+                updateProgress(total);
+            }
+            out.flush();
+        } catch (IOException e) {}
+    }
+}
+```
+
 *未完待续*

@@ -1,0 +1,74 @@
+---
+layout: post
+title: "B-Tree"
+date: 2015-10-15 18:55:27 +0800
+comments: true
+categories: 程序开发
+tag:
+- data structure
+- tree
+---
+##简介
+如果一个内部节点 *X* 包含了 *n* 个有序关键字，那么节点 *X* 有 *n + 1* 个子节点，每个叶节点有相同的深度即树的高度。
+
+节点 *X* 由其关键字分隔为 *n + 1* 个子域，每个子域和一个子树相对应。在对一个关键字进行搜索时，会通过比较节点中关键字，进行 *n + 1* 路选择遍历查找。
+
+![B-Tree](http://7xjra1.com1.z0.glb.clouddn.com/b-tree.png)
+
+节点中关键字的个数存在上下界，用`B-Tree`的最小度数 *t >= 2* 来表示。非根节点至少有 *t - 1* 个关键字，即有 *t* 棵子树；至多有 *2t - 1* 个关键字，即有 *2t* 棵子树，这时我们称这个节点是满的。当 *t = 2* 时，每个内部节点有 2 个、 3 个或 4 个子树，即一棵 *2-3-4 树*。
+
+##基本操作
+###B-TREE-SEARCH
+`class BTree`
+```ruby
+  def search(key)
+    b_tree_search(@root, key)
+  end
+
+  def b_tree_search(node = nil, search_key)
+    return nil unless node
+    node.keys.each_with_index do |key, idx|
+      return [node, idx] if search_key == key
+      next if search_key > key
+      b_tree_search(node.child[idx], key)
+      break
+    end
+    b_tree_search(node.child.last, key)
+    nil
+  end
+```
+
+###B-TREE-CREATE
+`class Node`
+```ruby
+  def initialize
+    @leaf  = true
+    @keys  = []
+    @child = []
+  end
+```
+`class BTree`
+```ruby
+  def initialize
+    @root = Node.new
+  end
+```
+###插入关键字
+我们无法直接新建一个叶节点，把关键字插入其中（这样的`B-Tree`可能是不合法的），所以我们会把新的关键字插入到已有的节点中。不过这样可能会导致一个节点关键字的数量超过它的上界，所以我们引入一个新的操作：分裂`B-Tree`中的节点。
+
+###B-TREE-SPLIT-CHILD
+![B-TREE-SPLIT-CHILD](http://7xjra1.com1.z0.glb.clouddn.com/b-tree-split-child.png)
+`class BTree`
+```ruby
+  def b_tree_split_node(node, pos)
+    new_child = Node.new
+    old_child = node.child[pos]
+
+    new_child.leaf  = old_child.leaf
+    new_child.keys  = old_child.pop(@t - 1)
+    new_child.child = old_child.pop(@t)
+
+    node.insert_child( new_child, pos + 1 )
+    node.insert_key( old_child.keys.pop, pos )
+  end
+```
