@@ -1,0 +1,10 @@
+---
+layout: post
+title: "如何快速地掌握 Ruby 最常用的 50%"
+date: 2016-07-18 18:35:27 +0800
+comments: true
+categories: 读书报告
+tags:
+- algorithm
+---
+最重要的是学会各类算法复杂度计算方法，而不是算法的使用方法。
