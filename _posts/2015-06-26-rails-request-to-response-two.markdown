@@ -8,7 +8,6 @@ tag:
 - dispatcher
 - rails
 - route
-- dispatcher
 - 学习报告
 ---
 *本文翻译自：[Rails from Request to Response 系列](http://andrewberls.com/blog/post/rails-from-request-to-response-part-2--routing)；个人选择了自己感兴趣的部分进行翻译，需要阅读原文的同学请戳前面的链接。*
