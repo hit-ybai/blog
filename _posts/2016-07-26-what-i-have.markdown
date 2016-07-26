@@ -1,24 +1,46 @@
 ---
 layout: post
-title: "[置顶] 这里提供什么？"
-date: 9999-12-31 23:59:59 +0800
+title: "[置顶] 本站地图"
+date: 3344-05-20 23:59:59 +0800
 comments: true
 ---
-- 高性能 Linux 多线程服务器编程相关
+### [关于 我](/about)
 
-> [并发模型学习 (1)](/2015/06/19/2015-06-20-seven-concurrency-models-in-seven-weeks-thread/)
-> [并发模型学习 (2)](/2015/06/19/2015-06-20-seven-concurrency-models-in-seven-weeks-mutex/)
-> [并发模型学习 (3)](/2015/06/20/2015-06-21-seven-concurrency-models-in-seven-weeks-memory-visibility/)
-> [并发模型学习 (4)](2015/06/21/2015-06-22-seven-concurrency-models-in-seven-weeks-dining-philosophers-problem/)
+### 关注领域
+> 1. 高性能 Linux 服务器端编程
+> 2. 大规模日志处理
+> 3. 大规模网站开发
+> 4. 数据结构与算法
 
-- 高可用，高伸缩，高扩展性 Web 架构相关
+---
+### 一、高性能 Linux 服务器端编程
+> § 并发模型学习系列
+> - [并发模型学习 (1)](/2015/06/19/2015-06-20-seven-concurrency-models-in-seven-weeks-thread/)
+> - [并发模型学习 (2)](/2015/06/19/2015-06-20-seven-concurrency-models-in-seven-weeks-mutex/)
+> - [并发模型学习 (3)](/2015/06/20/2015-06-21-seven-concurrency-models-in-seven-weeks-memory-visibility/)
+> - [并发模型学习 (4)](2015/06/21/2015-06-22-seven-concurrency-models-in-seven-weeks-dining-philosophers-problem/)
 
-- 网络安全相关
+> § C++ PRIMER PLUS 系列
+> - [C++ PRIMER PLUS (7)](http://localhost:4000/2012/01/29/2012-01-29-cpp-primer-plus-7/)
+> - [C++ PRIMER PLUS (8)](http://localhost:4000/2012/02/21/2012-02-21-cpp-primer-plus-8/)
+> - [C++ PRIMER PLUS (9)](http://localhost:4000/2012/02/21/2012-02-21-cpp-primer-plus-9/)
+> - [C++ PRIMER PLUS (10)](http://localhost:4000/2012/03/10/2012-03-10-cpp-primer-plus-10/)
+> - [C++ PRIMER PLUS (11)](http://localhost:4000/2012/03/10/2012-03-10-cpp-primer-plus-11/)
 
-- 常见数据库系统（关系型、NoSQL 及 Search Engine）相关
+### 二、大规模日志处理
+> § [ELK Introduction](http://localhost:4000/2016/07/25/2016-07-25-elk/)
 
-- 前端技术（常用 JavaScript 框架）相关
+### 三、大规模网站架构
+> § Web 开发框架
+> - Ruby on Rails
+>	+ [[Rails] 所谓MVC](http://localhost:4000/2015/01/19/2015-01-19-rails-mvc/)
+>	+ [[Rails] 从Request到Response（1）](http://localhost:4000/2015/06/26/2015-06-26-rails-request-to-response-one/)
+>	+ [[Rails] 从Request到Response（2）](http://localhost:4000/2015/06/28/2015-06-26-rails-request-to-response-two/)
 
-- 计算广告系统平台（偏广告投放引擎）相关
+### 四、数据结构与算法
+> § Leetcode 解题报告
+> - [LeetCode: Two Sum 解题报告](http://localhost:4000/2015/06/19/2015-06-19-leetcode-twoSum/)
+> - [LeetCode: Add Two Numbers 解题报告](http://localhost:4000/2015/06/20/2015-06-20-leetcode-addTwoNumbers/)
+> - [LeetCode: Longest Substring Without Repeating Characters 解题报告](http://localhost:4000/2015/06/20/2015-06-20-leetcode-longestSubstringWithoutRepeatingCharacters/)
 
-- 数据结构与算法相关
+（全文完）
