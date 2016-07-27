@@ -21,4 +21,7 @@ title: About
 ### 我最近想读的书
 > <script type="text/javascript" src="http://www.douban.com/service/badge/tranquilization/?selection=latest&amp;picsize=medium&amp;hideself=on&amp;show=wishlist&amp;n=4&amp;hidelogo=on&amp;cat=book&amp;columns=4"></script>
 
+### 我读过的书
+> <script type="text/javascript" src="http://www.douban.com/service/badge/tranquilization/?selection=latest&amp;picsize=small&amp;hideself=on&amp;show=collection&amp;n=20&amp;hidelogo=on&amp;cat=book&amp;columns=7"></script>
+
 最后感谢 Github 提供的静态网站托管服务，以及 七牛云存储 提供的图片存储服务，帮助我上镜。
