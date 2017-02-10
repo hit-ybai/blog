@@ -15,6 +15,10 @@ tags:
 
 *Here, my early experience was a doctor who sent bushel baskets full of normal gall bladders down to the pathology lab in the leading hospital in Lincoln, Nebraska. And with that quality control for which community hospitals are famous, about five years after he should’ve been removed from the staff, he was. And one of the old doctors who participated in the removal was also a family friend, and I asked him: I said, “Tell me, did he think, ‘Here’s a way for me to exercise my talents’” -- this guy was very skilled technically-- “’and make a high living by doing a few maimings and murders every year, along with some frauds?’” And he said, “Hell no, Charlie. He thought that the gall bladder was the source of all medical evil, and if you really love your patients, you couldn’t get that organ out rapidly enough.”*
 
-早年间，在 Lincoln, Nebraska 一家顶级医院中，有一名医生，经常提着装了一篮子一切正常的胆囊到病理学实验室。如此在五年之后，他被这家以质量闻名的社区医院开除了。有一位老医生，是家里的朋友，当时参与了做出开除决定。我问他:「是不是这哥们觉得自己医术牛逼，认为通过致残、杀害和欺诈一些人，过上土豪的生活，是他施展自己才华的一种方式？」老医生回答说：「当然不是。他认为胆囊是医疗隐患，如果你真的爱你的病人，就要用最快的速度把这个它从他体内取出。」
+之前在 Lincoln, Nebraska 的一家顶级医院中，有一名医生经常提着装了一篮子「一切正常」的胆囊到病理学实验室，五年之后，他被这家以质量闻名的社区医院开除了。
+
+有一位当时参与了做出开除决定的老医生，是家里的朋友。我问他:『是不是这人觉得自己技术不错，通过致残、杀害和欺诈一些人，来施展自己的「才华」，过上土豪的生活？』。
+
+老医生回答说：「当然不是，他认为胆囊是医疗隐患，如果你真的爱你的病人，就要用最快的速度把这个它从他体内取出。」
 
 *未完待续*
