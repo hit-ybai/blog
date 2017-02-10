@@ -14,7 +14,7 @@ tag:
 
 ##第二部分 路由（Routing）
 
- Blog::Application.routes 的定义也在 engine.rb 文件中：
+Blog::Application.routes 的定义也在 engine.rb 文件中：
 ```ruby
 # rails/railties/lib/rails/engine.rb
 
@@ -25,15 +25,15 @@ def routes
 end
 ```
 
- Blog::Application.routes 会返回一个 ActionDispatch::Routing::RouteSet 的实例。这是我们第一次接触到 ActionDispatch 模块（module），它是 ActionPack 的一部分。
+Blog::Application.routes 会返回一个 ActionDispatch::Routing::RouteSet 的实例。这是我们第一次接触到 ActionDispatch 模块（module），它是 ActionPack 的一部分。
 
- ActionDispatch ：
-  负责处理例如「路由（Routing）」，「参数解析（Parameter Parsing）」，「Cookies」和「Sessions」之类的工作；
+ActionDispatch ：
+负责处理例如「路由（Routing）」，「参数解析（Parameter Parsing）」，「Cookies」和「Sessions」之类的工作；
 
- ActionPack ：
+ActionPack ：
 Rails 源码的顶层的 gem 之一，功能包括：路由功能， controller （ActionController）的定义和 view （ActionView）的渲染；
 
- RouteSet ：
+RouteSet ：
 此类是一个Route的集合，包括一个 route 的数组（Mapper），和一个 named route （NamedRouteCollection： name 对应着一组普通的 route 集合的Hash）。负责解释和分派请求（Request）到对应的控制器（Controller）动作（Action）。
 
 现在继续来看 engine ，回到 RouteSet 的 #call 方法，相关的代码在 *actionpack/lib/action_dispatch/routing/route_set.rb* 中：
@@ -54,14 +54,14 @@ module ActionDispatch
   end
 end
 ```
- RouteSet 不会处理 @router 里的事情。如果我们看一下 [RouteSet constructor](https://github.com/rails/rails/blob/0dea33f770305f32ed7476f520f7c1ff17434fdc/actionpack/lib/action_dispatch/routing/route_set.rb#L299)，会发现 @router 其实是 Journey::Router 的一个实例。
+RouteSet 不会处理 @router 里的事情。如果我们看一下 [RouteSet constructor](https://github.com/rails/rails/blob/0dea33f770305f32ed7476f520f7c1ff17434fdc/actionpack/lib/action_dispatch/routing/route_set.rb#L299)，会发现 @router 其实是 Journey::Router 的一个实例。
 
 ###Journey
- Journey 是 ActionDispatch 的核心路由模块。它的[代码](https://github.com/rails/rails/tree/0dea33f770305f32ed7476f520f7c1ff17434fdc/actionpack/lib/action_dispatch/journey)是非常有趣的，其中用到了广义状态转移图（generalized transition graph）和非确定性有限状态自动机（non-deterministic finite automata）来配对URLs和路由。
+Journey 是 ActionDispatch 的核心路由模块。它的[代码](https://github.com/rails/rails/tree/0dea33f770305f32ed7476f520f7c1ff17434fdc/actionpack/lib/action_dispatch/journey)是非常有趣的，其中用到了广义状态转移图（generalized transition graph）和非确定性有限状态自动机（non-deterministic finite automata）来配对URLs和路由。
 
 有兴趣的话可以拿出你的计算机科学与技术本科的教科书（译注：指的应是《形式语言与自动机》）复习一下！Journey 甚至还包含了一个完整的 [yacc 语法文件](https://github.com/rails/rails/blob/0dea33f770305f32ed7476f520f7c1ff17434fdc/actionpack/lib/action_dispatch/journey/parser.y)来对 routes 进行语法分析。
 
- Journey::Router 的 #call 方法有些长，下面是相关部分：
+Journey::Router 的 #call 方法有些长，下面是相关部分：
 ```ruby
 # rails/actionpack/lib/action_dispatch/journey/router.rb
 
