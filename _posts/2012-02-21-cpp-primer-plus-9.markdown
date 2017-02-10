@@ -45,10 +45,10 @@ tags:
 
 只能使用常量表达式来初始化静态变量：
 ```cpp
-       int x; // x set to 0
-       int y = 49; //49 is a constant expression
-       int z = 2 * sizeof(int) + 1;// also a constant expression
-       int m = 2 * z; // incalud, z not a constant
+int x; // x set to 0
+int y = 49; //49 is a constant expression
+int z = 2 * sizeof(int) + 1;// also a constant expression
+int m = 2 * z; // incalud, z not a constant
 ```
 通常情况下应使用局部变量，在需要知晓时才传递数据。
 
@@ -76,7 +76,7 @@ veep.accesses++; //allowed
 `const`全局变量的链接性为内部的，因此可以在所有文件中使用相同的声明
 若希望某个常量的链接性为外部的，必须在所有使用该变量的文件中使用`extern`关键字来声明它
 ```cpp
-       extern const int states = 50; // external linkage
+extern const int states = 50; // external linkage
 ```
 可以再函数原型中使用关键字`extern`来指出函数是在另一个文件中定义的，不过这是可选的。
 还可以使用关键字`static`将函数的链接性设置为内部的，必须同时在原型和函数定义中使用该关键字。
@@ -91,31 +91,31 @@ static int private (double x);
 如果定义了一个和库函数同名的函数，编译器将采用程序员定义的版本。
 ####9.2.6 语言链接性 (如：函数名翻译) 
 ```cpp
-       extern "C" void spiff(int);
-       extern void spoff(int);
-       extern "C++" void spaff(int);
+extern "C" void spiff(int);
+extern void spoff(int);
+extern "C++" void spaff(int);
 ```
 第一个原型使用C语言链接性，第二个原型默认使用C++链接性，第三个显式使用C++链接性。
 ####9.2.7 存储方案和动态分配 
 在函数中用来跟踪动态内存的自动和静态指针变量遵循之前的存储方案，在函数结束时被释放，而new分配的内存会一直保留在内存当中，如果将指针的链接性声明为外部的，则在文件中后面的函数都可以使用它。
 ```cpp
-              float *p = new float[20];
+float *p = new float[20];
 ```
 ###9.3 布局new操作符 
 ```cpp
-       char buffer1[50];
-       char buffer2[500];
-       struct chaff
-       {
-              char dross[20];
-              int slag;
-       };
-       int main()
-       {
-              …
-              p2 = new (buffer1) chaff;
-              p4 = new (buffer2) int [20];
-              …
-       }
+char buffer1[50];
+char buffer2[500];
+struct chaff
+{
+       char dross[20];
+       int slag;
+};
+int main()
+{
+       …
+       p2 = new (buffer1) chaff;
+       p4 = new (buffer2) int [20];
+       …
+}
 ```
 上述代码中，从`buffer1`中分配空间给结构`chaff`，从`buffer2`中分配空间给一个`int`数组。

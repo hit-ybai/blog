@@ -33,25 +33,25 @@ void test(int);
 在C++中，当且仅当用于函数头或函数原型中时，`int *arr`和`int arr[]`的含义才是相同的。
 当指针指向数组的第一个元素时，本书中使用数组表示法；而当指针指向一个独立的值时，使用指针表示法。
 ```cpp
-        arr[i] == *(ar + i);
-        &arr[i] == ar+(i * 指向类型的长度)
+arr[i] == *(ar + i);
+&arr[i] == ar+(i * 指向类型的长度)
 ```
 原数组和参数数组指向同一个地址。但`sizeof(原数组)`为数组大小，而`sizeof(参数数组)`则为指针变量的大小，这就是必须显示传递数组长度，而不能再函数中使用`sizeof()`计算的原因；
 记住：为将数组类型和元素属相告诉数组处理函数，请通过两个不同的参数来传递它们。
 ```cpp
-        void fillArray(int arr[], int size); //prototype
-        void fillArray(int arr[size]); //bad prototype 
+void fillArray(int arr[], int size); //prototype
+void fillArray(int arr[size]); //bad prototype 
 ```
 
 ####7.3.5 指针和const 
 ```cpp
-        int age = 39;
-        const int *pt  = &age;
+int age = 39;
+const int *pt  = &age;
 ```
 该声明指出，`pt`指向一个`const int(这里是39)`，因此不能使用pt来修改这个值，换句话来说，`*pt`的值为`const`，不能被修改：
 ```cpp
-        *pt += 1; //INVALID
-        cin >> *pt; //INVALID    
+*pt += 1; //INVALID
+cin >> *pt; //INVALID    
 ```
 尽可能使用`const`，将指针参数声明为指向常量数据的指针有两条理由
 1. 这样可以避免无意间修改数据而导致变成错误;
@@ -66,12 +66,12 @@ void test(int);
 
 ###7.4 函数和二维数组
 ```cpp
-                int sum(int (*arr)[常数], int size);
-                int sum(int arr[][常数], int size);
+int sum(int (*arr)[常数], int size);
+int sum(int arr[][常数], int size);
 ```
 处理固定行数，未知列数的二维数据；
 ```cpp
-                ar2[r][c] == *(*(ar2 + r) + c); 
+ar2[r][c] == *(*(ar2 + r) + c); 
 ```
 
 ###7.9 函数指针 
@@ -83,16 +83,16 @@ void test(int);
 
 2. 声明函数指针
 ```cpp
-                double pam(int);
-                double (*pf)(int);
+double pam(int);
+double (*pf)(int);
 ```
     使用该函数指针的函数的原型
 ```cpp
-                void estimate(int lines, double(*pf)(int));
+void estimate(int lines, double(*pf)(int));
 ```
 3. 使用指针来调用函数
 ```cpp
-                double x = (*pf)(5); 
+double x = (*pf)(5); 
 ```
 
 注：C++中`(*pf)(5)`和`pf(5)`是等价的。 

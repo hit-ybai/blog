@@ -23,7 +23,7 @@ tags:
 
 ###10.3 类的构造函数和析构函数
 ```cpp
-              void stock::show() const //promises note change invoking object
+void stock::show() const //promises note change invoking object
 ```
 这种方法声明和定义的类函数成为`const`成员函数，只要类方法不修改调用对象，就应该将其声明为`const`。因为形如`show()`的方法没有形参，不能用`const`引用或`const`指针来避免修改对象。
 
@@ -32,12 +32,12 @@ tags:
 ###10.7 类的作用域
 
 在类中定义常量的方式——使用关键字`static`:
-```ruby
-       class stock
-       {
-              private:
-                     static const int len = 30;
-                     …
-       };
+```cpp
+class stock
+{
+       private:
+       static const int len = 30;
+       …
+};
 ```
 *第十章结束*

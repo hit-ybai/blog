@@ -7,7 +7,7 @@ title: About
 ---
 ## 关于 我
 
-我是 白钰，自 2007 年开始接触编程，2008 年获得[ NOIP ](http://baike.baidu.com/link?url=JgFSl8D46d-hzrHp1ldExlezbkuY538VZXhPONcZONrD6VLftf9wohjmKHnAmHbDi6O0B3le4XvblXwN12GU4-MhKMCLR10wLAVESQVLAoWHyMs48dvHxJPS4jt_CPWJupfx4Zn9_bDo27afXveyC_)一等奖，报送至哈尔滨工业大学。2014 年至今，任[ Freeheel ](http://www.freewheel.tv/) Software Engineer；
+我是 白钰，自 2007 年开始接触编程，2008 年获得[ NOIP ](http://baike.baidu.com/link?url=JgFSl8D46d-hzrHp1ldExlezbkuY538VZXhPONcZONrD6VLftf9wohjmKHnAmHbDi6O0B3le4XvblXwN12GU4-MhKMCLR10wLAVESQVLAoWHyMs48dvHxJPS4jt_CPWJupfx4Zn9_bDo27afXveyC_)一等奖，保送至哈尔滨工业大学。2014 年至今，任[ Freeheel ](http://www.freewheel.tv/) Software Engineer；
 
 *喜欢：打篮球，旅行，写日记，学习各种技术*
 *不喜欢：荧光灯，争吵，自以为是，不懂装懂*
