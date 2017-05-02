@@ -131,13 +131,13 @@ I don't know the answer
 The meaning of life is: 0
 ```
 
-####内存可见性
+#### 内存可见性
 `Java`内存模型定义了何时一个线程对内存的修改对另一个线程可见。基本原则是，如果读线程和写线程不进行同步，就不能保证可见性。
 
 除了`increment`之外，`count`的`getter`方法也需要进行同步。否则`count`方法可能获得一个失效的值：对于前面交互的两个线程，`conter`在`join`之后调用因此是线程安全的。但这种设计为其他调用`conter`的方法埋下了隐患。
 
 所以，「竞态条件」和「内存可见性」都可能让多线程程序运行结果出错。除此之外，还有一类问题：「死锁」。
 
-###推荐阅读
+### 推荐阅读
 *[深入理解Java内存模型系列](http://www.infoq.com/cn/articles/java-memory-model-1)*
 *[内存可见性](http://www.domaigne.com/blog/computing/mutex-and-memory-visibility/)*

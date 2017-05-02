@@ -9,8 +9,8 @@ tags:
 - c++ primer plus
 - 读书报告
 ---
-##第11章 使用类
-###11.1 操作符重载
+## 第11章 使用类
+### 11.1 操作符重载
 操作符重载时一种形式的C++多态，函数原型：
 ```cpp
 Type_name operator op (argument-list);
@@ -18,7 +18,7 @@ Type_name operator op (argument-list);
 `Type_name operator op`相当于函数名，`(argument-list)`相当于参数列表，`Type_name`相当于返回值，只是在调用的时候可省去函数后的括号和函数名中`operator`（不省也行，如`strsum = str1.operator+(str2);`）
 
 第一个参数通过`this`指针隐式传递
-###11.3 友元简介
+### 11.3 友元简介
 在左侧的操作数不是调用对象时，可使用非成员函数
 ```cpp
 A = 2.75 * B; // can not correspond to a mumber fuction
@@ -50,7 +50,7 @@ void operator<< (ostream &os, const Time &t)
 }
 ```
 `os`可以暂时理解为`cout`的别名
-###11.5 再谈重载：矢量类
+### 11.5 再谈重载：矢量类
 ```cpp
 shove.set(100, 300); //直接设置
 shove = Vector(100, 300) // Vector为类名，此方法使用构造函数创建一个临时对象，让后赋给shove
@@ -62,7 +62,7 @@ Vector Vector::operator-() const
        return Vector(-x, -y);
 }
 ```
-###11.6 类的自动转换和强制类型转换
+### 11.6 类的自动转换和强制类型转换
 只接受一个参数的构造函数如：
 ```cpp
 Stonewt (double lbs);

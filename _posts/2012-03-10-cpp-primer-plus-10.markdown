@@ -9,19 +9,19 @@ tags:
 - c++ primer plus
 - 读书报告
 ---
-##第10章 对象和类
-###OOP特性：
+## 第10章 对象和类
+### OOP特性：
 - 抽象
 - 封装和数据隐藏
 - 多态
 - 继承
 - 代码的可重用性
 
-###10.1 过程性编程和面向对象编程
+### 10.1 过程性编程和面向对象编程
 
-###10.2 抽象和类
+### 10.2 抽象和类
 
-###10.3 类的构造函数和析构函数
+### 10.3 类的构造函数和析构函数
 ```cpp
 void stock::show() const //promises note change invoking object
 ```
@@ -29,7 +29,7 @@ void stock::show() const //promises note change invoking object
 
 在当前类的方法中`*this`可作为当前类的别名进行修改或访问。
 
-###10.7 类的作用域
+### 10.7 类的作用域
 
 在类中定义常量的方式——使用关键字`static`:
 ```cpp

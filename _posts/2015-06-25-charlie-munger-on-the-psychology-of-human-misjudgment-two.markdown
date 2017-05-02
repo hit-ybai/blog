@@ -10,7 +10,7 @@ tags:
 ---
 作者：查理·芒格
 
-###My second factor is simple psychological denial.
+### My second factor is simple psychological denial.
 **第二条：单纯的心理学上的「否定」**
 
 *This first really hit me between the eyes when a friend of our family had a super-athlete, super-student son who flew off a carrier in the north Atlantic and never came back, and his mother, who was a very sane woman, just never believed that he was dead. And, of course, if you turn on the television, you’ll find the mothers of the most obvious criminals that man could ever diagnose, and they all think their sons are innocent. That’s simple psychological denial. The reality is too painful to bear, so you just distort it until it’s bearable. We all do that to some extent, and it’s a common psychological misjudgment that causes terrible problems.*

@@ -1,7 +1,7 @@
 title: 友情链接
 ---
 特别推荐：
-> ###[Introduction to RP](http://www.nocow.cn/index.php/RP%E5%AF%BC%E8%AE%BA)
+> ### [Introduction to RP](http://www.nocow.cn/index.php/RP%E5%AF%BC%E8%AE%BA)
 > RP，是人品的缩写，在民间广为流传，被不少人视作真理，也有很多人将之视作迷信。
 
 工作期间：

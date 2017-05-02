@@ -12,7 +12,7 @@ tag:
 ---
 *本文翻译自：[Rails from Request to Response 系列](http://andrewberls.com/blog/post/rails-from-request-to-response-part-2--routing)；个人选择了自己感兴趣的部分进行翻译，需要阅读原文的同学请戳前面的链接。*
 
-##第二部分 路由（Routing）
+## 第二部分 路由（Routing）
 
 Blog::Application.routes 的定义也在 engine.rb 文件中：
 ```ruby
@@ -56,7 +56,7 @@ end
 ```
 RouteSet 不会处理 @router 里的事情。如果我们看一下 [RouteSet constructor](https://github.com/rails/rails/blob/0dea33f770305f32ed7476f520f7c1ff17434fdc/actionpack/lib/action_dispatch/routing/route_set.rb#L299)，会发现 @router 其实是 Journey::Router 的一个实例。
 
-###Journey
+### Journey
 Journey 是 ActionDispatch 的核心路由模块。它的[代码](https://github.com/rails/rails/tree/0dea33f770305f32ed7476f520f7c1ff17434fdc/actionpack/lib/action_dispatch/journey)是非常有趣的，其中用到了广义状态转移图（generalized transition graph）和非确定性有限状态自动机（non-deterministic finite automata）来配对URLs和路由。
 
 有兴趣的话可以拿出你的计算机科学与技术本科的教科书（译注：指的应是《形式语言与自动机》）复习一下！Journey 甚至还包含了一个完整的 [yacc 语法文件](https://github.com/rails/rails/blob/0dea33f770305f32ed7476f520f7c1ff17434fdc/actionpack/lib/action_dispatch/journey/parser.y)来对 routes 进行语法分析。
@@ -158,7 +158,7 @@ end
 
 路由是 Rails 中一个相当复杂的一个部分，他的方法链很长。像之前所说的，我们并没有必要了解它的全部细节。Rails 具有魔力的地方就是它为你隐藏了所有这些细节。当然去探索这整个执行过程到底是如何发生的是一件很有趣的事情。
 
-###译者总结：
+### 译者总结：
 实际上每个存在的 Controller 和 Action 的组合都是一个 Rack App ，假设它们存在于一个集合 rack_app_set 中；同时假设所有系统可接受的合法URL的集合为 URL_set 。
 
 则路由为函数：

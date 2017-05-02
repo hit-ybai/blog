@@ -12,8 +12,8 @@ tag:
 ---
 *本文翻译自：[Rails from Request to Response 系列](http://andrewberls.com/blog/post/rails-from-request-to-response-part-1--introduction)；个人选择了自己感兴趣的部分进行翻译，需要阅读原文的同学请戳前面的链接。*
 
-##第一部分 导言（Introduction）
-###服务器
+## 第一部分 导言（Introduction）
+### 服务器
 在讲 Rails 调用栈之前，先简单介绍一下不同服务器应用的作用，其中并不会涉及到各个服务器应用（比如`Thin`和`Unicorn`或`Nginx`）的细节，因为文章的重点是讲 Rails 端的一些东西。
 
 这里举一个`Unicorn`的简单例子，管窥整个 Rails 应用。
@@ -65,7 +65,7 @@ end
 
 现在开始，我们需要了解 Rails 应用的继承机制，以及一个请求（request）是如何在 Rails 内部被处理的。
 
-###Rails Application and Engines
+### Rails Application and Engines
 我们之前提到，整个 Rails 应用的入口`#call`被定义在了`Rails::Application`中，我们通过继承来使用它。这里是它的定义（[源码](https://github.com/rails/rails/blob/0dea33f770305f32ed7476f520f7c1ff17434fdc/railties/lib/rails/application.rb#L139)）：
 ```ruby
 # rails/railties/lib/rails/application.rb
@@ -157,7 +157,7 @@ run Blog::Application.routes
 
 到这里，我们已经完成了`App server / Rails application stack`的导言部分的介绍，接下来会着重介绍`Rails routing / dispatch stack`。
 
-###译者总结
+### 译者总结
 我们可以讲`rake app`简化地表示为一个函数：
 > ƒ: *env_set* → *{ [status, headers, body] }*
 
@@ -174,11 +174,11 @@ s(n) → s(n-1) → ... → s(i) → ... s(1)
 ```
 看完这篇文章后，终于理解了[《Ruby社区应该去Rails化了》](http://robbinfan.com/blog/40/ruby-off-rails)中这段话的意思：
 
-> ###Rails为何不适合做Web Service?
+> ### Rails为何不适合做Web Service?
 > 我发现了一个有意思的现象，最早的一批用Ruby开发Web Service服务的网站，都选择了用Rails开发，而在最近几年又不约而同抛弃Rails重写Web服务框架。当初用Rails的原因很简单，因为产品早期起步，不确定性很高，使用Rails快速开发，可以最大限度节约开发成本和时间。但为何当请求量变大以后，Rails不再适合了呢？
 
 > 这主要是因为Rails本身是一个full-stack的Web框架，所有的设计目标就是为了开发Website，所以Rails框架封装过于厚重，对于需要更高性能更轻薄的Web Service应用场景来说，暴露出来了很多缺陷：
-> ####Rails调用堆栈过深，URL请求处理性能很差
+> #### Rails调用堆栈过深，URL请求处理性能很差
 
 > Rails的设计目标是提供Web开发的 最佳实践 ，所以无论你需要不需要，Rails默认提供了开发Website所有可能的组件，但其中绝大部分你可能一辈子都用不上。例如Rails项目默认添加了20个middleware，但其中10个都是可以去掉的，我们自己的项目当中手工删除了这些middleware：
 

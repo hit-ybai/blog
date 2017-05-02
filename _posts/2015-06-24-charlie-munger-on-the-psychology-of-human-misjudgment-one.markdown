@@ -12,7 +12,7 @@ tags:
 
 本文是作者1995年在哈佛法学院的演讲 [原文链接](http://www.rbcpa.com/Mungerspeech_june_95.pdf)
 
-###First: Under-recognition of the power of what psychologists call ‘reinforcement’ and economists call ‘incentives.’
+### First: Under-recognition of the power of what psychologists call ‘reinforcement’ and economists call ‘incentives.’
 **第一条：低估 心理学家所谓的「强化」 / 经济学家所谓的「激励」的 效果。**
 
 *Well you can say, “Everybody knows that.” Well I think I’ve been in the top 5% of my age cohort all my life in understanding the power of incentives, and all my life I’ve underestimated it. And never a year passes but I get some surprise that pushes my limit a little farther.*

@@ -10,7 +10,7 @@ tags:
 ---
 作者：查理·芒格
 
-###Third: incentive-cause bias, both in one’s own mind and that of ones trusted advisor, where it creates what economists call ‘agency costs.’
+### Third: incentive-cause bias, both in one’s own mind and that of ones trusted advisor, where it creates what economists call ‘agency costs.’
 **第三条：由激励导致的偏见，同时存在于每个人和其所信赖的顾问的脑海中，它造就了经济学家所谓的「代理成本」（agency costs）**
 
 *Here, my early experience was a doctor who sent bushel baskets full of normal gall bladders down to the pathology lab in the leading hospital in Lincoln, Nebraska. And with that quality control for which community hospitals are famous, about five years after he should’ve been removed from the staff, he was. And one of the old doctors who participated in the removal was also a family friend, and I asked him: I said, “Tell me, did he think, ‘Here’s a way for me to exercise my talents’” -- this guy was very skilled technically-- “’and make a high living by doing a few maimings and murders every year, along with some frauds?’” And he said, “Hell no, Charlie. He thought that the gall bladder was the source of all medical evil, and if you really love your patients, you couldn’t get that organ out rapidly enough.”*

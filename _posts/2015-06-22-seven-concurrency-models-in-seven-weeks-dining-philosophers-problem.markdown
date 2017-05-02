@@ -9,7 +9,7 @@ tags:
 - 并行
 - 读书报告
 ---
-####[哲学家用餐问题（Dining philosophers problem）](https://zh.wikipedia.org/zh-cn/%E5%93%B2%E5%AD%A6%E5%AE%B6%E5%B0%B1%E9%A4%90%E9%97%AE%E9%A2%98)
+#### [哲学家用餐问题（Dining philosophers problem）](https://zh.wikipedia.org/zh-cn/%E5%93%B2%E5%AD%A6%E5%AE%B6%E5%B0%B1%E9%A4%90%E9%97%AE%E9%A2%98)
 简单来说：有五个哲学家坐在一张圆桌上，每个人之间放着一只餐叉，这样桌上就有五只餐叉。哲学家只会做两件事，吃饭，或者思考。吃东西的时候，他们就停止思考，思考的时候也停止吃东西。
 ![来自Wikipedia](http://7xjra1.com1.z0.glb.clouddn.com/Dining_philosophers.png)
 

@@ -22,6 +22,6 @@ tags:
 <lable style ="color: red">更新于：2015.6.23</lable>
 现在还是部署回Github，因为Gitcafe常常出现无法访问的情况。
 
-##Reference
+## Reference
 [Hexo Landscape主题的字体和JS库优化](http://kuangqi.me/tricks/hexo-optimizations-for-mainland-china/)
 [Hexo 同时支持Github和Gitcafe](http://colobu.com/2014/10/13/hexo-supports-both-github-and-gitcafe/)

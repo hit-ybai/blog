@@ -38,5 +38,5 @@ ruby.snippets文件中有各个简写展开形式的记录，也可以通过改�
 功能: 显示文件目录;
 
 
-##Reference:
+## Reference:
 Rails with Vim : <http://Railscasts-china.com/episodes/Rails-with-vim>
